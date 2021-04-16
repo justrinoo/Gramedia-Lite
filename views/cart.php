@@ -33,7 +33,7 @@ if ($role !== "buyyer") {
                     <?php $totalcart = 0; ?>
                     <?php foreach ($_SESSION["keranjang"] as $bookid => $hasil) :  ?>
                         <?php $data = querySql("SELECT * FROM products WHERE id_product = $bookid")[0];
-                        $totalHarga =  $hasil * $data["harga_buku"];
+                        $totalHarga =  $data["harga_buku"] * $hasil;
                         ?>
                         <div class="card-body">
                             <div class="d-flex align-items-center">
@@ -42,7 +42,7 @@ if ($role !== "buyyer") {
                                     <div class="card-title mb-5">
                                         <h5 class="badge bg-info"><?= $data["kategori_buku"]; ?></h5>
                                         <h5><small> <?= $data["judul_buku"]; ?></small></h5>
-                                        <h5><small>Rp <?= number_format($data["harga_buku"]); ?></small></h5>
+                                        <h5><small>Harga Buku: Rp <?= number_format($data["harga_buku"]); ?></small></h5>
                                         <h5><small>Total Buku: <?= $hasil; ?></small></h5>
                                         <h5><small><?= $data["deskripsi_buku"]; ?></small>:</h5>
                                         <a href="delete-cart.php?id=<?= $data["id_product"]; ?>" class="btn btn-outline-danger btn-sm">Hapus</a>

@@ -23,7 +23,7 @@ if (!isset($_SESSION["user"])) {
             <div class="col-md-3">
                 <div class="card mt-3" style="width: 17rem;">
                     <div class="card-header">Buku <?= $book["kategori_buku"]; ?></div>
-                    <img src="https://placeimg.com/300/300/nature" width="100%" height="100%" alt="">
+                    <img src="<?= $book["link_image"]; ?>" width="100%" height="100%" alt="">
                     <div class="card-body">
                         <h5 class="card-title text-truncate"><?= $book["judul_buku"]; ?></h5>
                         <span class="badge bg-primary"><?= $book["kategori_buku"]; ?></span>

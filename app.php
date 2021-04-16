@@ -3,7 +3,7 @@
 /**
  * SET UP DATABASE
  */
-$db = mysqli_connect("", "", "", "");
+$db = mysqli_connect("localhost", "root", "root", "book-store");
 
 
 function querySql($query)
@@ -170,5 +170,29 @@ function rejectBook($bookid)
 
     $queryRejectBook = "UPDATE checkout SET status_buku = 'reject' WHERE id_checkout ='$bookid'";
     mysqli_query($db, $queryRejectBook);
+    return mysqli_affected_rows($db);
+}
+function editBook($data, $id)
+{
+
+    global $db;
+
+    $judul_buku = $data["judul_buku"];
+    $kategori_buku = $data["kategori_buku"];
+    $harga_buku = $data["harga_buku"];
+    $pembuat_buku = $data["pembuat_buku"];
+    $deskripsi_buku = $data["deskripsi_buku"];
+    $updateBuku = date("Y-m-d h:m:s");
+
+    $findBook = "UPDATE products SET judul_buku = '$judul_buku', kategori_buku = '$kategori_buku', harga_buku = '$harga_buku', pembuat_buku = '$pembuat_buku', deskripsi_buku = '$deskripsi_buku', rilis_buku = '$updateBuku' WHERE id_product = '$id'";
+    mysqli_query($db, $findBook);
+    return mysqli_affected_rows($db);
+}
+function deleteBook($id)
+{
+    global $db;
+
+    $queryDeleteBook = "DELETE FROM products WHERE id_product = '$id'";
+    mysqli_query($db, $queryDeleteBook);
     return mysqli_affected_rows($db);
 }

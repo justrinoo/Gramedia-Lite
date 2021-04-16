@@ -34,7 +34,7 @@ if ($role !== "seller") {
                             <p class="badge bg-info"><?= $book["kategori_buku"]; ?></p>
                             <p class="fw-bold">Rp <?= number_format($book["harga_buku"]); ?></p>
                             <p class="text-justify text-truncate" style="max-width: 250px;"><?= $book["deskripsi_buku"]; ?></p>
-                            <a href="d-product.php?id=<?= $book["id_product"]; ?>" class="btn btn-info btn-sm">Baca Lebih Lanjut</a>
+                            <a href="detail-product.php?id=<?= $book["id_product"]; ?>" class="btn btn-info btn-sm">Baca Lebih Lanjut</a>
                         </div>
                         <div class="card-footer">
                             <span>Pembuat: <?= $book["pembuat_buku"]; ?></span>

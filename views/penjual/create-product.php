@@ -18,9 +18,13 @@ if (isset($_POST["createProduct"])) {
     if (createBook($_POST) > 0) {
         echo "<script>
             alert('Berhasil membuat produk buku!');
+            location='index.php';
         </script>";
     } else {
-        echo mysqli_error($db);
+        echo "<script>
+            alert('Kesalahan Jaringan');
+            location='index.php';
+        </script>";
     }
 }
 

@@ -51,18 +51,27 @@ $productBook = querySql("SELECT * FROM products ORDER BY id_product ASC");
     </div>
 </section>
 
-<section>
-    <div class="container">
-        <h3 class="mt-5 text-center">Ada masalah saat pembelian buku? silahkan hubungi saya 😁</h3>
-        <div class="text-center">
-            <a href="https://t.me/riyaraa" class="btn btn-primary mt-3">
+<section style="background: url(../assets/images/bg-contact.svg); background-size: cover; height: 55vh;" class="position-relative d-flex justify-content-center text-center">
+    <div style="margin-top: 150px;">
+        <h3 class="fw-bold">Saya Siap bantu anda!!</h3>
+        <h3 class="fw-bolder">Jangan ragu hubungi saya 😁</h3>
+        <a href="https://t.me/riyaraa" class="text-decoration-none">
+            <div class="mt-3">
                 <img src="../assets/images/icons/telegram.svg" width="30" alt="">
                 <span>Lets Talk</span>
+            </div>
+        </a>
+        <div class="d-flex justify-content-center mt-4">
+            <a href="https://github.com/riyaraa" class="text-decoration-none mx-3"><img src="../assets/images/icons/github.svg" width="30" alt="Github"> </a>
+            <a href="https://twitter.com/riyaraaa" class="text-decoration-none mx-3">
+                <img src="../assets/images/icons/twitter.svg" width="30" alt="">
+            </a>
+            <a href="https://instagram.com/rinosatyaputra_" class="text-decoration-none mx-3">
+                <img src="../assets/images/icons/instagram.svg" width="30" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/rino-satya-putra-940539173/" class="text-decoration-none mx-3">
+                <img src="../assets/images/icons/linkedin.svg" width="30" alt="">
             </a>
         </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#ffdeeb" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-    </svg>
-
 </section>
