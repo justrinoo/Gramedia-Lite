@@ -18,7 +18,7 @@ $productBook = querySql("SELECT * FROM products ORDER BY id_product ASC");
                 <h3 class="fw-bold">Fakta Artikel Tentang Buku</h3>
                 <div class="mt-4">
                     <h5>(+) Ada sekitar 129 juta buku tercetak di dunia</h5>
-                    <p>Mengacu pada data algoritma Google yang dikutip dari Mashable, buku yang telah dicetak di semua era modern ini adalah 129 juta buku, dengan jumlah terhitung persisnya 129.864.880 buah buku. Walau bagaimana pun, Google mengakui perhitungannya belum sempurna, tetapi mereka dapat memastikan bahwa buku-buku yang terhitung tersebut adalah yang tercantum dalam ISBN (International Standard Book Number</p>
+                    <p>Mengacu pada data algoritma Google yang dikutip dari Mashable, buku yang telah dicetak di semua era modern ini adalah 129 juta buku, dengan jumlah terhitung persisnya 129.864.880 buah buku. Walau bagaimana pun, Google mengakui perhitungannya belum sempurna, tetapi mereka dapat memastikan bahwa buku-buku yang terhitung tersebut adalah yang tercantum dalam ISBN (International Standard Book Number).</p>
                     <p>Sumber: <a href="https://literasinusantara.com/fakta-unik-tentang-buku/" class="text-decoration-none text-dark fw-bold">Literasi Nusantara</a></p>
                 </div>
             </div>
@@ -44,6 +44,7 @@ $productBook = querySql("SELECT * FROM products ORDER BY id_product ASC");
                     <h5>(-) History Order</h5>
                     <h5>(-) Multi User</h5>
                     <h5>(-) Control Order (Admin Page)</h5>
+                    <h5>(-) CRUD Product (Admin Page)</h5>
                 </div>
             </div>
         </div>
