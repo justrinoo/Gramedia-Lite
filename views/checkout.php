@@ -2,7 +2,7 @@
 session_start();
 require('../app.php');
 if (!isset($_SESSION["user"])) {
-    header("Location: signin.php");
+    header("Location: login.php");
 }
 
 $role = $_SESSION["role"];
@@ -20,7 +20,7 @@ if (isset($_POST["checkoutBuku"])) {
 }
 
 if (empty($_SESSION["keranjang"]) || !isset($_SESSION["keranjang"])) {
-    echo "<script>alert('Keranjang masih kosong belanja dulu yu!'); location='product.php';</script>";
+    echo "<script>alert('Keranjang masih kosong belanja dulu yu!'); location='barang.php';</script>";
 }
 
 ?>

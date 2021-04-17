@@ -45,11 +45,11 @@ require('../partials/header.php');
 <section style="height: 70vh;">
     <div class="container">
         <div class="mt-5">
-            <div class="card" style="width: 50%; margin: auto;">
+            <div class="card" style="width: 90%; margin: auto;">
                 <div class="card-header d-flex">
                     <h5 class="mr-auto">Login Dulu Yu!</h5>
                     <span class="mx-auto"></span>
-                    <a href="signup.php" class="text-decoration-none float-end">
+                    <a href="daftar.php" class="text-decoration-none float-end">
                         <p>Buat akun disini!</p>
                     </a>
                 </div>

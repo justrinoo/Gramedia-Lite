@@ -10,8 +10,8 @@
             </div>
             <div class="navbar-nav mr-auto">
                 <?php if (!isset($_SESSION["user"])) : ?>
-                    <a class="nav-link fw-bold text-dark mx-2" href="../views/signup.php">Daftar</a>
-                    <a class="btn btn-dark text-white" href="../views/signin.php">Masuk</a>
+                    <a class="nav-link fw-bold text-dark mx-2" href="../views/daftar.php">Daftar</a>
+                    <a class="btn btn-dark text-white" href="../views/login.php">Masuk</a>
                 <?php elseif (isset($_SESSION["user"])) : ?>
                     <a class="nav-link fw-bold text-dark mx-2 " href="../views/history-order.php">Orderan</a>
                     <a class="nav-link fw-bold text-dark mx-2" href="../views/cart.php">Keranjang</a>

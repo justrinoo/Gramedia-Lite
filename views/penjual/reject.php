@@ -3,7 +3,7 @@ require('../../app.php');
 session_start();
 
 if (!isset($_SESSION["user"])) {
-    header("Location: ../signin.php");
+    header("Location: ../login.php");
 }
 
 $bookId = $_GET["id"];

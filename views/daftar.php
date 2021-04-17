@@ -6,12 +6,12 @@ if (isset($_POST["daftar"])) {
         // ketika function usernya ini mengembalikan true, atau mysqli_num_rows nya lebih dari 0
         echo "<script> 
             alert('Berhasil membuat akun!'); 
-            location='signin.php';
+            location='login.php';
         </script>";
     } else {
         echo "<script> 
             alert('Gagal membuat akun!'); 
-            location='signup.php';
+            location='daftar.php';
         </script>";
     }
 }
@@ -24,12 +24,12 @@ require('../partials/header.php');
 
 <div class="container">
     <div class="mt-5">
-        <div class="card" style="width: 50%; margin: auto;">
+        <div class="card" style="width: 80%; margin: auto;">
             <div class="card-header d-flex">
                 <h5 class="mr-auto">Daftar Yu<span onclick="btnAdmin()">!</span></h5>
 
                 <span class="mx-auto"></span>
-                <a href="signin.php" class="text-decoration-none float-end">
+                <a href="login.php" class="text-decoration-none float-end">
                     <p>Login disini!</p>
                 </a>
             </div>

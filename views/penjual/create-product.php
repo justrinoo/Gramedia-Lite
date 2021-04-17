@@ -3,7 +3,7 @@ session_start();
 require('../../app.php');
 
 if (!isset($_SESSION["user"])) {
-    header("Location: ../signin.php");
+    header("Location: ../login.php");
 }
 
 

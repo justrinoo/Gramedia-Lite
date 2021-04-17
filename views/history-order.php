@@ -3,7 +3,7 @@ require("../app.php");
 session_start();
 
 if (!isset($_SESSION["user"])) {
-    header("Location: signin.php");
+    header("Location: login.php");
 }
 
 
@@ -63,3 +63,5 @@ if ($orderan == null) {
         </div>
     </div>
 </div>
+
+<?php require('../partials/footer.php'); ?>

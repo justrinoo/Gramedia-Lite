@@ -34,25 +34,25 @@ function createUser($data)
 
     if (mysqli_fetch_assoc($userAlready)) {
         setcookie("error_auth", "maaf user tersebut sudah ada, ganti yang lain yu!", time() + 1);
-        header("location: signup.php");
+        header("location: daftar.php");
     }
 
 
     if (empty($nama)) {
         setcookie("error_auth", 'Nama wajib di isi', time() + 1);
-        header("Location: signup.php");
+        header("Location: daftar.php");
     } else if (empty($email)) {
         setcookie("error_auth", 'Email juga wajib di isi', time() + 1);
-        header("Location: signup.php");
+        header("Location: daftar.php");
     } else if (empty($password)) {
         setcookie("error_auth", 'Password juga ya wajib di isi', time() + 1);
-        header("Location: signup.php");
+        header("Location: daftar.php");
     } else if (empty($book_favorite)) {
         setcookie("error_auth", 'Buku juga supaya kita tau, buku favorite kamu!', time() + 1);
-        header("Location: signup.php");
+        header("Location: daftar.php");
     } else if (empty($jenis_kelamin)) {
         setcookie("error_auth", 'Jenis kelamin juga ya jangan lupa!', time() + 1);
-        header("Location: signup.php");
+        header("Location: daftar.php");
     }
 
     $passwordHash = password_hash($password, PASSWORD_DEFAULT);
@@ -145,7 +145,7 @@ function createCheckout($data)
     $dataCheckout =  mysqli_query($db, $sqlAlreadyCheckout);
 
     if (mysqli_fetch_assoc($dataCheckout)) {
-        setcookie("error_validation_checkout", 'sepertinya anda sudah melakukan checkout!', time() + 1);
+        setcookie("error_validation_checkout", 'Mohon maaf 1 akun hanya bisa sekali checkout, terima kasih!', time() + 1);
         header("Location: checkout.php");
         return false;
     }

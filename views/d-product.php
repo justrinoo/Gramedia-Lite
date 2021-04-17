@@ -6,7 +6,7 @@ $book = querySql("SELECT * FROM products WHERE id_product = $bookId")[0];
 
 
 if (!isset($_SESSION["user"])) {
-    header("Location: signin.php");
+    header("Location: login.php");
 }
 
 $role = $_SESSION["role"];

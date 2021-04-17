@@ -4,7 +4,7 @@ require('../app.php');
 $productBook = querySql("SELECT * FROM products ORDER BY id_product ASC");
 
 if (!isset($_SESSION["user"])) {
-    header("Location: signin.php");
+    header("Location: login.php");
 }
 
 ?>

@@ -6,7 +6,7 @@
             </h1>
             <p class="text-muted mt-2">Jangan baca sampai koma, tapi baca sampai titik.</p>
             <hr width="50%" class="p-1">
-            <a href="../views/product.php" class="btn btn-outline-dark mt-3">Beli buku sekarang</a>
+            <a href="../views/barang.php" class="btn btn-outline-dark mt-3">Beli buku sekarang</a>
         </div>
         <div class="col-md-5">
             <img src="../assets/images/reading-book.png" width="100%" alt="">

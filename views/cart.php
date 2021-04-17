@@ -20,7 +20,7 @@ if ($role !== "buyyer") {
                 <h2>Loh ko sepi?</h2>
             </div>
             <img src="../assets/images/empty-cart.png" style="width: 30%; margin: auto;" class="img-fluid" alt="Empty Cart">
-            <a href="product.php" class="text-center text-decoration-none fw-bold">Beli buku dulu yu!</a>
+            <a href="barang.php" class="text-center text-decoration-none fw-bold">Beli buku dulu yu!</a>
         </div>
     </div>
 <?php endif; ?>

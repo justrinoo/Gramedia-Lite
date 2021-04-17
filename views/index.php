@@ -51,27 +51,31 @@ $productBook = querySql("SELECT * FROM products ORDER BY id_product ASC");
     </div>
 </section>
 
-<section style="background: url(../assets/images/bg-contact.svg); background-size: cover; height: 55vh;" class="position-relative d-flex justify-content-center text-center">
-    <div style="margin-top: 150px;">
-        <h3 class="fw-bold">Saya Siap bantu anda!!</h3>
-        <h3 class="fw-bolder">Jangan ragu hubungi saya 😁</h3>
-        <a href="https://t.me/riyaraa" class="text-decoration-none">
-            <div class="mt-3">
-                <img src="../assets/images/icons/telegram.svg" width="30" alt="">
-                <span>Lets Talk</span>
+<section>
+    <div class="container">
+        <div style="margin-top: 150px;">
+            <h3 class="fw-bold text-center">Saya Siap bantu anda!!</h3>
+            <h3 class="fw-bolder text-center">Jangan ragu hubungi saya 😁</h3>
+            <a href="https://t.me/riyaraa" class="text-decoration-none text-center">
+                <div class="mt-3">
+                    <img src="../assets/images/icons/telegram.svg" width="30" alt="">
+                    <span>Lets Talk</span>
+                </div>
+            </a>
+            <div class="d-flex justify-content-center mt-4">
+                <a href="https://github.com/riyaraa" class="text-decoration-none mx-3"><img src="../assets/images/icons/github.svg" width="30" alt="Github"> </a>
+                <a href="https://twitter.com/riyaraaa" class="text-decoration-none mx-3">
+                    <img src="../assets/images/icons/twitter.svg" width="30" alt="">
+                </a>
+                <a href="https://instagram.com/rinosatyaputra_" class="text-decoration-none mx-3">
+                    <img src="../assets/images/icons/instagram.svg" width="30" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/rino-satya-putra-940539173/" class="text-decoration-none mx-3">
+                    <img src="../assets/images/icons/linkedin.svg" width="30" alt="">
+                </a>
             </div>
-        </a>
-        <div class="d-flex justify-content-center mt-4">
-            <a href="https://github.com/riyaraa" class="text-decoration-none mx-3"><img src="../assets/images/icons/github.svg" width="30" alt="Github"> </a>
-            <a href="https://twitter.com/riyaraaa" class="text-decoration-none mx-3">
-                <img src="../assets/images/icons/twitter.svg" width="30" alt="">
-            </a>
-            <a href="https://instagram.com/rinosatyaputra_" class="text-decoration-none mx-3">
-                <img src="../assets/images/icons/instagram.svg" width="30" alt="">
-            </a>
-            <a href="https://www.linkedin.com/in/rino-satya-putra-940539173/" class="text-decoration-none mx-3">
-                <img src="../assets/images/icons/linkedin.svg" width="30" alt="">
-            </a>
         </div>
     </div>
 </section>
+
+<?php require('../partials/footer.php'); ?>
