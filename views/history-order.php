@@ -16,7 +16,7 @@ if ($role !== "buyyer") {
 $user = $_SESSION["nama"];
 $orderan = querySql("SELECT * FROM checkout WHERE nama = '$user'");
 if ($orderan == null) {
-    echo "<script>alert('Orderan masih kosong nih, yu beli dulu!'); location='product.php';</script>";
+    echo "<script>alert('Orderan masih kosong nih, yu beli dulu!'); location='barang.php';</script>";
 }
 ?>
 

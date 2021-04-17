@@ -139,6 +139,10 @@ function createCheckout($data)
         setcookie("error_validation_checkout", 'Alamat nya juga ya!', time() + 1);
         header("Location: checkout.php");
         return false;
+    } else if (strlen($no_telp)  >= 16) {
+        setcookie("error_validation_checkout", 'Nomor telephone tidak boleh lebih dari 16!', time() + 1);
+        header("Location: checkout.php");
+        return false;
     }
 
     $sqlAlreadyCheckout = "SELECT * FROM checkout WHERE nama = '$nama'";

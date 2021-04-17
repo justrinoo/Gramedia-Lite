@@ -15,7 +15,7 @@ if (isset($_POST["checkoutBuku"])) {
     if (createCheckout($_POST) > 0) {
         header("Location: history-order.php");
     } else {
-        echo "<script>alert('Kesalahan Jaringan'); location='index.php';</script>";
+        echo mysqli_error($db);
     }
 }
 

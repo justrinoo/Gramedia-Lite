@@ -15,7 +15,7 @@
                 <?php elseif (isset($_SESSION["user"])) : ?>
                     <a class="nav-link fw-bold text-dark mx-2 " href="../views/history-order.php">Orderan</a>
                     <a class="nav-link fw-bold text-dark mx-2" href="../views/cart.php">Keranjang</a>
-                    <span class="nav-link fw-bold text-dark mx-2" href="#"><?= $_SESSION["nama"] ?></span>
+                    <span class="nav-link fw-bold text-dark mx-2"><?= $_SESSION["nama"] ?></span>
                     <a href="../auth/logout.php" class="btn btn-dark text-white fw-bold text-dark mx-2">Logout</a>
                 <?php endif; ?>
             </div>
