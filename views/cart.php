@@ -63,3 +63,5 @@ if ($role !== "buyyer") {
         </div>
     </div>
 <?php endif; ?>
+
+<?php require('../partials/footer.php'); ?>

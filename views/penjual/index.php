@@ -18,6 +18,7 @@ if ($role !== "seller") {
 ?>
 
 <?php require('../../partials/header.php'); ?>
+<?php require('../../partials/header.php'); ?>
 <?php require('./nav.php'); ?>
 
 <section>
@@ -25,7 +26,7 @@ if ($role !== "seller") {
         <div class="row">
             <?php foreach ($books as $book) : ?>
                 <div class="col-md-3">
-                    <div class="card mt-4" style="width: 17rem;">
+                    <div class="card mt-4">
                         <img src="https://placeimg.com/320/250/nature" width="100%" alt="">
                         <div class="card-body">
                             <div class="card-title">
@@ -47,3 +48,5 @@ if ($role !== "seller") {
         </div>
     </div>
 </section>
+
+<?php require('../../partials/footer.php'); ?>
