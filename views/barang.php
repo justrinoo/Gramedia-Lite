@@ -19,7 +19,7 @@ if (!isset($_SESSION["user"])) {
         </div>
     </div>
     <div class="row">
-        <?php foreach ($productBook as $book) { ?>
+        <?php foreach ($productBook as $book) : ?>
             <div class="col-md-3">
                 <div class="card mt-3">
                     <div class="card-header">Buku <?= $book["kategori_buku"]; ?></div>
@@ -37,7 +37,7 @@ if (!isset($_SESSION["user"])) {
                     </div>
                 </div>
             </div>
-        <?php } ?>
+        <?php endforeach; ?>
     </div>
 </div>
 <?php require('../partials/footer.php'); ?>
